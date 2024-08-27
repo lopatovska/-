@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monument Pizza</title>
+    <style>
+        body, pre {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        input[type="button"]{
+            background-color: rgb(210, 210, 210);
+        }
+
+        .footer, .nav a, button {
+            background-color: rgb(210, 210, 210);
+        }
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .footer pre {
+            margin-top: 10px;
+        }
+
+        ul.nav {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+        .nav li {
+            margin-right: 15px;
+        }
+        .nav a {
+            text-align: center;
+            display: inline-block;
+            width: 100px;
+            height: 31px;
+            padding: 10px;
+            border: 1px solid #333;
+            color: #333;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+        .nav a:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .pizza-container {
+            display: flex;
+            margin-bottom: 20px;
+            width: calc(100% - 380px); 
+        }
+
+        .square {
+            border: 2px solid;
+            height: 370px;
+            width: 350px;
+            color: black;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(210, 210, 210);
+        }
+
+
+        hr.nav-divider {
+            border: solid 1px;
+            width: 100%;
+            margin: 0;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index1.html"><img src="logo.png" alt="logo" height="250"></a>
+            <nav>
+                <ul class="nav">
+                    <li><a href="history_menu.html">Історія замовлень</a></li>
+                    <li><a href="phone_menu.html">Номер телефону</a></li>
+                    <li><a href="delivery_menu.html">Адреса доставки</a></li>
+                    <li><a href="sales.html">Знижки</a></li>
+                    <li><a href="comment_menu.html">Залишити відгук</a></li>
+                    <li><a href="info_menu.html">Профіль</a></li>
+                    <li><a href="enter_menu.html">Вхід<br>Реєстрація</a></li>
+                    <li><a href="basket.html">Кошик</a></li>
+                </ul>
+            </nav>
+        </div>
+        <hr class="nav-divider">
+    </header>
+
+    <main class="main">
+        <div class="pizza-container">
+            <a href="margarita.html">
+                <div class="square">
+                    <img src="Margarita.png" alt="margarita" height="230" width="230">
+                    <hr>
+                    <p style="text-align: center;"><span style="font-size: x-large;">Маргарита</span><br><br><span>290грн</span><br>1 шт.</br></p>
+                </div>
+            </a>
+            <a href="pineapple.html" style="margin-left: 20px;">
+                <div class="square">
+                    <img src="pineapple.png" alt="pineapple" height="230" width="230">
+                    <hr>
+                    <p style="text-align: center;"><span style="font-size: x-large;">Гавайська</span><br><br><span>390грн</span><br>1 шт.</br></p>
+                </div>
+            </a>
+        </div>
+
+        <div>
+            <form action="#" method="get">
+                <label for="address">Адреса доставки: </label>
+                <input type="text" name="address" id="address">
+                <input type="button" value="Збережені адреси">
+                <input type="button" value="Вибрати на мапі">
+            </form> 
+            <p>Сума доставки: 52грн (3.2км)</p>
+            <form action="#" method="get">
+                <label for="phone">Номер телефону: </label>
+                <input type="tel" name="phone" id="phone" pattern="\d{10}">
+                <input type="button" name="phone1" id="phone1" value="Збережені номери">
+            </form>
+            <p>Загальна сума: 732грн</p>
+            <input type="button" value="Замовити" style="height: 50px; width: 180px;">
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <pre>
+Телефон: 0674776854
+                 0686567654
+            </pre>
+            <p>Фізична адреса: вул. Шевченка, 173</p>
+            <p>Електронна адреса: <br>monument_pizza@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>

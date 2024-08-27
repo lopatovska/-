@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monument Pizza</title>
+    <style>
+        body, pre {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer, .nav a{
+            background-color: rgb(210, 210, 210);
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .footer pre {
+            margin-top: 10px;
+        }
+
+        .square {
+            text-align: center;
+            float: left;
+            border: 2px solid;
+            height: 370px;
+            width: 350px;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(210, 210, 210);
+            margin: 20px;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .square:hover {
+            transform: translateY(-20px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+        }
+
+        header > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        ul.nav {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav li {
+            margin-right: 15px;
+        }
+
+        ul.nav a {
+            display: inline-block;
+            width: 100px;
+            height: 31px;
+            padding: 10px;
+            background-color: rgb(210, 210, 210);
+            border: 1px solid #333;
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 32px;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        ul.nav a:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border: dotted;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        hr.nav-divider {
+            border: solid 1px;
+            width: 100%;
+            margin: 0;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index1.html"><img src="logo.png" alt="logo" height="250"></a>
+            <nav>
+                <ul class="nav">
+                    <li><a href="history_menu.html">Історія замовлень</a></li>
+                    <li><a href="phone_menu.html">Номер телефону</a></li>
+                    <li><a href="delivery_menu.html">Адреса доставки</a></li>
+                    <li><a href="sales.html">Знижки</a></li>
+                    <li><a href="comment_menu.html">Залишити відгук</a></li>
+                    <li><a href="info_menu.html">Профіль</a></li>
+                    <li><a href="enter_menu.html">Вхід<br>Реєстрація</a></li>
+                    <li><a href="basket.html">Кошик</a></li>
+                </ul>
+            </nav>
+        </div>
+        <hr class="nav-divider">
+    </header>
+
+    <main>
+        <p style="margin-left: 20px; font-size: larger;">Історія замовлень:</p>
+        <div class="square">
+            <a href="margarita.html" style="text-decoration: none;">
+                <img src="Margarita.png" alt="margarita" height="230" width="230">
+                <hr>
+                <p><span style="font-size: x-large;">Маргарита</span><br><br><span style="font-size: larger;">290грн</span><br><br>20.03.2024</p>
+            </a>
+        </div>
+
+        <div class="square">
+            <a href="masroom.html" style="text-decoration: none;">
+                <img src="mashroom.png" alt="mashroom" height="230" width="230">
+                <hr>
+                <p><span style="font-size: x-large;">Грибна</span><br><br><span style="font-size: larger;">350грн</span><br><br>13.04.2024</p>
+            </a>
+        </div>
+
+        <p style="clear: both; margin-top: 20px; margin-left: 20px;">Загальна кількість замовлень: 2 шт.</p>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <pre>Телефон: 0674776854
+                 0686567654</pre>
+                 <p>Фізична адреса: вул. Шевченка, 173</p>
+                 <p>Електронна адреса: <br>monument_pizza@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monument Pizza</title>
+    <style>
+        body, pre {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 20px;
+        }
+
+        .square, .square1, .footer, .nav a, input[type="button"] {
+            background-color: rgb(210, 210, 210);
+        }
+
+        .square, .square1 {
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .square {
+            height: 500px;
+            width: 500px;
+            flex-direction: column;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .square1 {
+            height: 250px;
+            width: 1000px;
+        }
+
+        .footer {
+            background-color: rgb(210, 210, 210);
+            color: black;
+            clear: both;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .footer pre {
+            margin-top: 10px;
+        }
+
+        hr {
+            border: dotted;
+            width: 70%;
+        }
+
+        ul.nav {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav li {
+            margin-right: 15px;
+        }
+
+        .nav a {
+            text-align: center;
+            display: inline-block;
+            width: 100px;
+            height: 31px;
+            padding: 10px;
+            border: 1px solid #333;
+            color: #333;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 32px;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .nav a:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        form {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index1.html"><img src="logo.png" alt="logo" height="250"></a>
+            <nav>
+                <ul class="nav">
+                    <li><a href="history_menu.html">Історія замовлень</a></li>
+                    <li><a href="phone_menu.html">Номер телефону</a></li>
+                    <li><a href="delivery_menu.html">Адреса доставки</a></li>
+                    <li><a href="sales.html">Знижки</a></li>
+                    <li><a href="comment_menu.html">Залишити відгук</a></li>
+                    <li><a href="info_menu.html">Профіль</a></li>
+                    <li><a href="enter_menu.html">Вхід<br>Реєстрація</a></li>
+                    <li><a href="basket.html">Кошик</a></li>
+                </ul>
+            </nav>
+        </div>  
+        <hr style="border: solid 1px; width: 100%;">
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="square">
+                <img src="pineapple.png" alt="pineapple" height="328" width="328">
+                <hr>
+                <p><span style="font-size: x-large;">Гавайська</span><br><br><span style="font-size: larger;">270грн / 390грн</span></p>
+            </div>
+            <div class="square1">
+                <p style="text-align: center;">Інгрідієнти: вершковий соус, сир моцарелла, шинка, бекон, ананаси, солодкий перець, цибуля, базилік, сіль, перець</p>
+            </div>
+        </div>
+        <form action="#" method="get" style="margin-top:20px; margin-left: 20px;">
+            <label for="size">Розмір: </label>
+            <input type="button" id="size" value="30" style="width: 60px; height: 30px;"> <input type="button" value="40" style="width: 60px; height: 30px;">
+            <p>Ціна: 390грн</p>
+            <input type="button" value="Додати до кошика" style="background-color: rgb(210, 210, 210); height: 50px; width: 180px;">
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <pre>
+Телефон: 0674776854
+                 0686567654
+            </pre>
+            <p>Фізична адреса: вул. Шевченка, 173</p>
+            <p>Електронна адреса: <br>monument_pizza@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
